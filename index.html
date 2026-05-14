@@ -3,150 +3,340 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Apex Superbikes — Premium sports, cruiser, and naked bikes.">
-  <title>Apex | Extreme Superbikes</title>
+  <meta name="description" content="Apex Superbikes — Premium sports, cruiser, and naked bikes. Book a test ride today.">
+  <meta name="theme-color" content="#050505">
+  <title>Apex Superbikes | Premium Showroom</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;900&family=Syncopate:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  
-  <div class="particles"></div>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="atmosphere" aria-hidden="true">
+    <div class="bg-mesh"></div>
+    <div class="bg-glow"></div>
+    <div class="bg-glow bg-glow-2"></div>
+    <div class="bg-glow bg-glow-3"></div>
+    <div class="grain" aria-hidden="true"></div>
+  </div>
+
+  <div class="scroll-progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-label="Page scroll progress"></div>
 
   <header class="hero" id="top">
-    <nav class="nav" aria-label="Primary">
-      <a class="brand glitch" data-text="APEX" href="#top">APEX</a>
-      <div class="nav-links">
+    <nav class="nav css-reveal-down" aria-label="Primary">
+      <a class="brand" href="#top">
+        <span class="brand-icon">🏍️</span>
+        <span class="brand-text">APEX</span>
+      </a>
+      <input type="checkbox" id="nav-toggle" class="nav-checkbox sr-only" aria-hidden="true">
+      <div class="nav-links" id="navLinks">
         <a href="#models">Models</a>
         <a href="#gallery">Gallery</a>
-        <a href="#test-ride" class="nav-btn">Test Ride</a>
+        <a href="#test-ride">Test Ride</a>
       </div>
+      <label for="nav-toggle" class="nav-toggle" aria-label="Toggle menu">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </label>
     </nav>
 
     <div class="hero-content">
       <div class="hero-copy">
-        <p class="eyebrow neon-pulse">Welcome to the Future</p>
-        <h1 class="hero-title glitch" data-text="DOMINATE THE ROAD.">
-          DOMINATE THE ROAD.
+        <p class="eyebrow css-reveal-up">Unleash the Adrenaline</p>
+        <h1 class="css-reveal-up hero-title" style="transition-delay: 0.1s">
+          Precision engineering meets pure emotion.
         </h1>
-        <p class="hero-text">
-          Hyper-performance machines built for absolute supremacy. Feel the rush of our state-of-the-art superbikes.
+        <p class="hero-text css-reveal-up" style="transition-delay: 0.2s">
+          Experience the thrill of cutting-edge superbikes. Discover our exclusive collection of sport, cruiser, and street motorcycles built for the ultimate ride.
         </p>
-        <div class="hero-actions">
-          <a class="button cyber-btn" href="#models">
-            Explore Models
-            <span class="btn-glitch"></span>
-          </a>
+        <div class="hero-actions css-reveal-up" style="transition-delay: 0.3s">
+          <a class="button button-primary" href="#models">Explore Models</a>
+          <a class="button button-secondary" href="#test-ride">Book Test Ride</a>
         </div>
       </div>
 
-      <div class="hero-card tilt-card">
+      <div class="hero-card css-reveal-scale">
+        <div class="hero-card-frame" aria-hidden="true"></div>
         <div class="glass-layer"></div>
         <img
-          src="https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=100&w=1200&auto=format&fit=crop"
-          alt="Red sports motorcycle"
-          class="hero-img"
+          src="https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=100&w=1600&auto=format&fit=crop"
+          alt="Red sports motorcycle in a sleek environment"
+          width="1200"
+          height="800"
         />
         <div class="hero-card-caption">
-          <span>V4 PANIGALE</span>
-          <strong>Pure Adrenaline</strong>
+          <span>Featured Model</span>
+          <strong>V4 Panigale S</strong>
         </div>
       </div>
     </div>
   </header>
 
-  <div class="marquee-wrap" aria-hidden="true">
+  <div class="marquee-wrap css-scroll" aria-hidden="true">
     <div class="marquee">
-      <span>PERFORMANCE</span><span class="marquee-dot">⚡</span>
-      <span>SPEED</span><span class="marquee-dot">⚡</span>
-      <span>POWER</span><span class="marquee-dot">⚡</span>
-      <span>ADRENALINE</span><span class="marquee-dot">⚡</span>
-      <span>PERFORMANCE</span><span class="marquee-dot">⚡</span>
-      <span>SPEED</span><span class="marquee-dot">⚡</span>
-      <span>POWER</span><span class="marquee-dot">⚡</span>
-      <span>ADRENALINE</span><span class="marquee-dot">⚡</span>
+      <span>Sport</span>
+      <span class="marquee-dot">///</span>
+      <span>Cruiser</span>
+      <span class="marquee-dot">///</span>
+      <span>Naked</span>
+      <span class="marquee-dot">///</span>
+      <span>Adventure</span>
+      <span class="marquee-dot">///</span>
+      <span>Track</span>
+      <span class="marquee-dot">///</span>
+      <span>Custom</span>
+      <span class="marquee-dot">///</span>
+      <span>Sport</span>
+      <span class="marquee-dot">///</span>
+      <span>Cruiser</span>
+      <span class="marquee-dot">///</span>
+      <span>Naked</span>
+      <span class="marquee-dot">///</span>
+      <span>Adventure</span>
+      <span class="marquee-dot">///</span>
+      <span>Track</span>
+      <span class="marquee-dot">///</span>
+      <span>Custom</span>
+      <span class="marquee-dot">///</span>
     </div>
   </div>
 
   <main id="main">
-    <section class="section stats" aria-label="Performance Specs">
-      <div class="stats-grid glass-panel">
+    <section class="section stats css-scroll" aria-label="Performance Specs">
+      <div class="stats-grid">
         <div class="stat">
-          <span class="stat-value neon-red-text">320+</span>
+          <span class="stat-value" data-count="310">310</span>
           <span class="stat-label">Top Speed (km/h)</span>
         </div>
         <div class="stat">
-          <span class="stat-value neon-cyan-text">2.5s</span>
-          <span class="stat-label">0-100 km/h</span>
+          <span class="stat-value" data-count="2.8">2.8</span>
+          <span class="stat-label">0-100 km/h (sec)</span>
         </div>
         <div class="stat">
-          <span class="stat-value neon-red-text">230</span>
+          <span class="stat-value" data-count="214">214</span>
           <span class="stat-label">Horsepower</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value" data-count="15">15</span>
+          <span class="stat-label">Current Models</span>
         </div>
       </div>
     </section>
 
     <section class="section intro" id="models">
-      <div class="section-heading">
-        <p class="eyebrow neon-pulse">Our Lineup</p>
-        <h2 class="glitch" data-text="CHOOSE YOUR WEAPON.">CHOOSE YOUR WEAPON.</h2>
+      <div class="section-heading css-scroll">
+        <p class="eyebrow">Our Lineup</p>
+        <h2>Machines crafted to dominate the asphalt.</h2>
       </div>
 
-      <div class="bento-grid">
-        <article class="bento-card bento-large tilt-card">
-          <div class="bento-bg" style="background-image: url('https://images.unsplash.com/photo-1449426468159-d96dbf08f19f?q=100&w=1200&auto=format&fit=crop');"></div>
-          <div class="bento-content">
-            <h3>SPORT / TRACK</h3>
-            <p>Aerodynamic perfection and race-derived tech.</p>
-            <span class="explore-link">Explore Sport ⚡</span>
+      <div class="bento-grid css-scroll">
+        <article class="bento-card bento-large group">
+          <div
+            class="bento-bg"
+            style="background-image: url('https://images.unsplash.com/photo-1568772585407-9361f9bf3c87?q=100&w=1200&auto=format&fit=crop');"
+          ></div>
+          <div class="bento-content glass-overlay">
+            <h3>Sport Bikes</h3>
+            <p>
+              Aerodynamic profiles and race-derived technology for those who crave maximum speed and agility on the track or the street.
+            </p>
+            <span class="explore-link">Explore Sport ///</span>
           </div>
         </article>
 
-        <article class="bento-card tilt-card">
-          <div class="bento-bg" style="background-image: url('https://images.unsplash.com/photo-1558981806-ec527fa84c39?q=100&w=800&auto=format&fit=crop');"></div>
-          <div class="bento-content">
-            <h3>CRUISERS</h3>
-            <p>Raw power for the open highway.</p>
+        <article class="bento-card group">
+          <div
+            class="bento-bg"
+            style="background-image: url('https://images.unsplash.com/photo-1558981806-ec527fa84c39?q=100&w=1200&auto=format&fit=crop');"
+          ></div>
+          <div class="bento-content glass-overlay">
+            <h3>Cruisers</h3>
+            <p>Raw power and relaxed riding positions for long journeys.</p>
           </div>
         </article>
 
-        <article class="bento-card tilt-card">
-          <div class="bento-bg" style="background-image: url('https://images.unsplash.com/photo-1609630875171-b1321377ee65?q=100&w=800&auto=format&fit=crop');"></div>
-          <div class="bento-content">
-            <h3>STREETFIGHTER</h3>
-            <p>Aggressive styling and explosive torque.</p>
+        <article class="bento-card group">
+          <div
+            class="bento-bg"
+            style="background-image: url('https://images.unsplash.com/photo-1609630875171-b1321377ee65?q=100&w=1200&auto=format&fit=crop');"
+          ></div>
+          <div class="bento-content glass-overlay">
+            <h3>Street / Naked</h3>
+            <p>Stripped down, aggressive styling with explosive mid-range torque.</p>
           </div>
         </article>
       </div>
     </section>
 
-    <section class="section visit" id="test-ride">
-      <div class="visit-panel glass-panel tilt-card">
+    <blockquote class="section manifesto css-scroll">
+      <p class="manifesto-quote">
+        "Riding is not just about getting from point A to point B. It's about the symphony of the engine and the blur of the horizon."
+      </p>
+      <cite class="manifesto-cite">— Apex Design Philosophy</cite>
+    </blockquote>
+
+    <section class="section gallery-section" id="gallery">
+      <div class="section-heading split css-scroll">
+        <div>
+          <p class="eyebrow">Showroom Gallery</p>
+          <h2>A closer look at engineering excellence.</h2>
+        </div>
+      </div>
+
+      <div class="gallery-grid">
+        <article class="art-card css-scroll">
+          <div class="img-wrapper">
+            <img
+              src="https://images.unsplash.com/photo-1591557303038-a8370dd546fc?q=100&w=900&auto=format&fit=crop"
+              alt="Black sport motorcycle"
+              loading="lazy"
+              width="900"
+              height="1200"
+            />
+          </div>
+          <div class="art-card-body glass-overlay">
+            <span>Sport</span>
+            <h3>Ninja ZX-10R</h3>
+            <p>Track-focused beast with unparalleled aerodynamics.</p>
+          </div>
+        </article>
+
+        <article class="art-card css-scroll" style="transition-delay: 0.1s">
+          <div class="img-wrapper">
+            <img
+              src="https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?q=100&w=900&auto=format&fit=crop"
+              alt="Classic vintage style modern motorcycle"
+              loading="lazy"
+              width="900"
+              height="1200"
+            />
+          </div>
+          <div class="art-card-body glass-overlay">
+            <span>Cruiser</span>
+            <h3>Bobber Black</h3>
+            <p>Timeless silhouette with a thumping twin engine.</p>
+          </div>
+        </article>
+
+        <article class="art-card css-scroll" style="transition-delay: 0.2s">
+          <div class="img-wrapper">
+            <img
+              src="https://images.unsplash.com/photo-1590634629479-7f329976db57?q=100&w=900&auto=format&fit=crop"
+              alt="Streetfighter motorcycle"
+              loading="lazy"
+              width="900"
+              height="1200"
+            />
+          </div>
+          <div class="art-card-body glass-overlay">
+            <span>Naked</span>
+            <h3>Streetfighter V4</h3>
+            <p>Superbike performance in a stripped-down chassis.</p>
+          </div>
+        </article>
+
+        <article class="art-card css-scroll">
+          <div class="img-wrapper">
+            <img
+              src="https://images.unsplash.com/photo-1502744688674-c619d1586c9e?q=100&w=900&auto=format&fit=crop"
+              alt="Adventure motorcycle"
+              loading="lazy"
+              width="900"
+              height="1200"
+            />
+          </div>
+          <div class="art-card-body glass-overlay">
+            <span>Adventure</span>
+            <h3>Tiger Explorer</h3>
+            <p>Conquer any terrain with advanced suspension.</p>
+          </div>
+        </article>
+
+        <article class="art-card css-scroll" style="transition-delay: 0.1s">
+          <div class="img-wrapper">
+            <img
+              src="https://images.unsplash.com/photo-1621252179022-81414436bf64?q=100&w=900&auto=format&fit=crop"
+              alt="Red modern motorcycle side view"
+              loading="lazy"
+              width="900"
+              height="1200"
+            />
+          </div>
+          <div class="art-card-body glass-overlay">
+            <span>Sport</span>
+            <h3>Fireblade SP</h3>
+            <p>Precision control and lightning-fast shifts.</p>
+          </div>
+        </article>
+
+        <article class="art-card css-scroll" style="transition-delay: 0.2s">
+          <div class="img-wrapper">
+            <img
+              src="https://images.unsplash.com/photo-1543393470-b6e82846876c?q=100&w=900&auto=format&fit=crop"
+              alt="Motorcycle details close up"
+              loading="lazy"
+              width="900"
+              height="1200"
+            />
+          </div>
+          <div class="art-card-body glass-overlay">
+            <span>Details</span>
+            <h3>Brembo Brakes</h3>
+            <p>Premium stopping power for high-speed runs.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section visit css-scroll" id="test-ride">
+      <div class="visit-panel glass-panel">
         <div class="visit-content">
-          <p class="eyebrow neon-pulse">Take The Keys</p>
-          <h2>BOOK A TEST RIDE</h2>
-          <p>Experience the ultimate rush. Reserve your exclusive track day or street test ride now.</p>
+          <p class="eyebrow">Feel The Rush</p>
+          <h2>Book your exclusive test ride today.</h2>
+          <p>
+            Experience the power and agility of our lineup firsthand. Schedule a test ride with our expert staff to find the perfect machine for your riding style.
+          </p>
         </div>
         <form class="visit-form" id="visitForm">
-          <input name="name" type="text" placeholder="Driver Name" required />
-          <input name="email" type="email" placeholder="Email Address" required />
-          <a href="#toast-trigger" class="button cyber-btn">Confirm Booking <span class="btn-glitch"></span></a>
+          <label class="sr-only" for="visitName">Your name</label>
+          <input id="visitName" name="name" type="text" placeholder="Full Name" autocomplete="name" required />
+          <label class="sr-only" for="visitEmail">Email address</label>
+          <input id="visitEmail" name="email" type="email" placeholder="Email Address" autocomplete="email" required />
+          <label class="sr-only" for="modelSelect">Preferred Model</label>
+          <select id="modelSelect" name="model" required>
+            <option value="" disabled selected>Select Preferred Model</option>
+            <option value="sport">Sport Bikes</option>
+            <option value="cruiser">Cruisers</option>
+            <option value="naked">Street / Naked</option>
+            <option value="adventure">Adventure</option>
+          </select>
+          <a href="#toast-trigger" id="reserveBtn" class="button button-primary" style="text-align:center;">Schedule Ride</a>
         </form>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
+  <footer class="footer css-scroll">
     <div class="footer-brand">
-      <p class="brand-footer glitch" data-text="APEX">APEX</p>
+      <p class="brand-footer">
+        <span class="brand-icon">🏍️</span> APEX
+      </p>
+      <p class="footer-tagline">Pushing the limits of motorcycle engineering.</p>
     </div>
-    <p class="footer-year">© 2026 APEX SUPERBIKES. ALL RIGHTS RESERVED.</p>
+    <p class="footer-year">© 2026 Apex Superbikes. Practical Submission Project.</p>
+    <div class="footer-links">
+      <a href="#" rel="noopener noreferrer">Instagram</a>
+      <a href="#" rel="noopener noreferrer">YouTube</a>
+      <a href="#top">Back to top</a>
+    </div>
   </footer>
 
   <div class="css-toast" id="toast-trigger">
-    <div class="toast-message">Booking Confirmed. See you on the track.</div>
-    <a href="#" class="toast-close-btn">&times;</a>
+    <input type="checkbox" id="toast-close" class="sr-only">
+    <div class="toast-message">Thank you — your test ride request has been received.</div>
+    <label for="toast-close" class="toast-close-btn">&times;</label>
   </div>
 </body>
 </html>
