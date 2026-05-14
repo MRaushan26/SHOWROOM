@@ -3,340 +3,146 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Apex Superbikes — Premium sports, cruiser, and naked bikes. Book a test ride today.">
-  <meta name="theme-color" content="#050505">
-  <title>Apex Superbikes | Premium Showroom</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <title>Bharat Motors | Authorised Two-Wheeler Dealership</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
 
-  <div class="atmosphere" aria-hidden="true">
-    <div class="bg-mesh"></div>
-    <div class="bg-glow"></div>
-    <div class="bg-glow bg-glow-2"></div>
-    <div class="bg-glow bg-glow-3"></div>
-    <div class="grain" aria-hidden="true"></div>
-  </div>
-
-  <div class="scroll-progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-label="Page scroll progress"></div>
-
-  <header class="hero" id="top">
-    <nav class="nav css-reveal-down" aria-label="Primary">
-      <a class="brand" href="#top">
-        <span class="brand-icon">🏍️</span>
-        <span class="brand-text">APEX</span>
-      </a>
-      <input type="checkbox" id="nav-toggle" class="nav-checkbox sr-only" aria-hidden="true">
-      <div class="nav-links" id="navLinks">
-        <a href="#models">Models</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#test-ride">Test Ride</a>
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <div class="logo">
+        <h1>Bharat Motors</h1>
       </div>
-      <label for="nav-toggle" class="nav-toggle" aria-label="Toggle menu">
-        <span class="nav-toggle-bar"></span>
-        <span class="nav-toggle-bar"></span>
-      </label>
-    </nav>
-
-    <div class="hero-content">
-      <div class="hero-copy">
-        <p class="eyebrow css-reveal-up">Unleash the Adrenaline</p>
-        <h1 class="css-reveal-up hero-title" style="transition-delay: 0.1s">
-          Precision engineering meets pure emotion.
-        </h1>
-        <p class="hero-text css-reveal-up" style="transition-delay: 0.2s">
-          Experience the thrill of cutting-edge superbikes. Discover our exclusive collection of sport, cruiser, and street motorcycles built for the ultimate ride.
-        </p>
-        <div class="hero-actions css-reveal-up" style="transition-delay: 0.3s">
-          <a class="button button-primary" href="#models">Explore Models</a>
-          <a class="button button-secondary" href="#test-ride">Book Test Ride</a>
-        </div>
-      </div>
-
-      <div class="hero-card css-reveal-scale">
-        <div class="hero-card-frame" aria-hidden="true"></div>
-        <div class="glass-layer"></div>
-        <img
-          src="images/hero_bike_1778755028940.png"
-          alt="Red sports motorcycle in a sleek environment"
-          width="1200"
-          height="800"
-        />
-        <div class="hero-card-caption">
-          <span>Featured Model</span>
-          <strong>V4 Panigale S</strong>
-        </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#bikes">New Bikes</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </nav>
+      <div class="contact-btn">
+        <a href="tel:+919876543210" class="btn btn-outline">Call: +91 98765 43210</a>
       </div>
     </div>
   </header>
 
-  <div class="marquee-wrap css-scroll" aria-hidden="true">
-    <div class="marquee">
-      <span>Sport</span>
-      <span class="marquee-dot">///</span>
-      <span>Cruiser</span>
-      <span class="marquee-dot">///</span>
-      <span>Naked</span>
-      <span class="marquee-dot">///</span>
-      <span>Adventure</span>
-      <span class="marquee-dot">///</span>
-      <span>Track</span>
-      <span class="marquee-dot">///</span>
-      <span>Custom</span>
-      <span class="marquee-dot">///</span>
-      <span>Sport</span>
-      <span class="marquee-dot">///</span>
-      <span>Cruiser</span>
-      <span class="marquee-dot">///</span>
-      <span>Naked</span>
-      <span class="marquee-dot">///</span>
-      <span>Adventure</span>
-      <span class="marquee-dot">///</span>
-      <span>Track</span>
-      <span class="marquee-dot">///</span>
-      <span>Custom</span>
-      <span class="marquee-dot">///</span>
+  <!-- Hero Banner -->
+  <section class="hero" id="home">
+    <div class="hero-image">
+      <img src="images/hero_banner_1778758754396.png" alt="Bharat Motors Showroom Interior">
     </div>
-  </div>
-
-  <main id="main">
-    <section class="section stats css-scroll" aria-label="Performance Specs">
-      <div class="stats-grid">
-        <div class="stat">
-          <span class="stat-value" data-count="310">310</span>
-          <span class="stat-label">Top Speed (km/h)</span>
-        </div>
-        <div class="stat">
-          <span class="stat-value" data-count="2.8">2.8</span>
-          <span class="stat-label">0-100 km/h (sec)</span>
-        </div>
-        <div class="stat">
-          <span class="stat-value" data-count="214">214</span>
-          <span class="stat-label">Horsepower</span>
-        </div>
-        <div class="stat">
-          <span class="stat-value" data-count="15">15</span>
-          <span class="stat-label">Current Models</span>
-        </div>
-      </div>
-    </section>
-
-    <section class="section intro" id="models">
-      <div class="section-heading css-scroll">
-        <p class="eyebrow">Our Lineup</p>
-        <h2>Machines crafted to dominate the asphalt.</h2>
-      </div>
-
-      <div class="bento-grid css-scroll">
-        <article class="bento-card bento-large group">
-          <div
-            class="bento-bg"
-            style="background-image: url('images/sport_bike_1778755046982.png');"
-          ></div>
-          <div class="bento-content glass-overlay">
-            <h3>Sport Bikes</h3>
-            <p>
-              Aerodynamic profiles and race-derived technology for those who crave maximum speed and agility on the track or the street.
-            </p>
-            <span class="explore-link">Explore Sport ///</span>
-          </div>
-        </article>
-
-        <article class="bento-card group">
-          <div
-            class="bento-bg"
-            style="background-image: url('images/cruiser_bike_1778755074535.png');"
-          ></div>
-          <div class="bento-content glass-overlay">
-            <h3>Cruisers</h3>
-            <p>Raw power and relaxed riding positions for long journeys.</p>
-          </div>
-        </article>
-
-        <article class="bento-card group">
-          <div
-            class="bento-bg"
-            style="background-image: url('images/naked_bike_1778755110159.png');"
-          ></div>
-          <div class="bento-content glass-overlay">
-            <h3>Street / Naked</h3>
-            <p>Stripped down, aggressive styling with explosive mid-range torque.</p>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <blockquote class="section manifesto css-scroll">
-      <p class="manifesto-quote">
-        "Riding is not just about getting from point A to point B. It's about the symphony of the engine and the blur of the horizon."
-      </p>
-      <cite class="manifesto-cite">— Apex Design Philosophy</cite>
-    </blockquote>
-
-    <section class="section gallery-section" id="gallery">
-      <div class="section-heading split css-scroll">
-        <div>
-          <p class="eyebrow">Showroom Gallery</p>
-          <h2>A closer look at engineering excellence.</h2>
-        </div>
-      </div>
-
-      <div class="gallery-grid">
-        <article class="art-card css-scroll">
-          <div class="img-wrapper">
-            <img
-              src="images/sport_bike_1778755046982.png"
-              alt="Black sport motorcycle"
-              loading="lazy"
-              width="900"
-              height="1200"
-            />
-          </div>
-          <div class="art-card-body glass-overlay">
-            <span>Sport</span>
-            <h3>Track Dominator</h3>
-            <p>Track-focused beast with unparalleled aerodynamics.</p>
-          </div>
-        </article>
-
-        <article class="art-card css-scroll" style="transition-delay: 0.1s">
-          <div class="img-wrapper">
-            <img
-              src="images/cruiser_bike_1778755074535.png"
-              alt="Classic vintage style modern motorcycle"
-              loading="lazy"
-              width="900"
-              height="1200"
-            />
-          </div>
-          <div class="art-card-body glass-overlay">
-            <span>Cruiser</span>
-            <h3>Bobber Black</h3>
-            <p>Timeless silhouette with a thumping twin engine.</p>
-          </div>
-        </article>
-
-        <article class="art-card css-scroll" style="transition-delay: 0.2s">
-          <div class="img-wrapper">
-            <img
-              src="images/naked_bike_1778755110159.png"
-              alt="Streetfighter motorcycle"
-              loading="lazy"
-              width="900"
-              height="1200"
-            />
-          </div>
-          <div class="art-card-body glass-overlay">
-            <span>Naked</span>
-            <h3>Streetfighter V4</h3>
-            <p>Superbike performance in a stripped-down chassis.</p>
-          </div>
-        </article>
-
-        <article class="art-card css-scroll">
-          <div class="img-wrapper">
-            <img
-              src="images/gallery_action_1778758358860.png"
-              alt="Adventure motorcycle"
-              loading="lazy"
-              width="900"
-              height="1200"
-            />
-          </div>
-          <div class="art-card-body glass-overlay">
-            <span>Action</span>
-            <h3>Coastal Run</h3>
-            <p>Experience the ultimate freedom on winding roads.</p>
-          </div>
-        </article>
-
-        <article class="art-card css-scroll" style="transition-delay: 0.1s">
-          <div class="img-wrapper">
-            <img
-              src="images/hero_bike_1778755028940.png"
-              alt="Red modern motorcycle side view"
-              loading="lazy"
-              width="900"
-              height="1200"
-            />
-          </div>
-          <div class="art-card-body glass-overlay">
-            <span>Concept</span>
-            <h3>Nexus Volt R1</h3>
-            <p>The future of electric performance riding.</p>
-          </div>
-        </article>
-
-        <article class="art-card css-scroll" style="transition-delay: 0.2s">
-          <div class="img-wrapper">
-            <img
-              src="images/gallery_detail_1778758329646.png"
-              alt="Motorcycle details close up"
-              loading="lazy"
-              width="900"
-              height="1200"
-            />
-          </div>
-          <div class="art-card-body glass-overlay">
-            <span>Details</span>
-            <h3>Akrapovič Exhaust</h3>
-            <p>Premium components for peak power delivery.</p>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section class="section visit css-scroll" id="test-ride">
-      <div class="visit-panel glass-panel">
-        <div class="visit-content">
-          <p class="eyebrow">Feel The Rush</p>
-          <h2>Book your exclusive test ride today.</h2>
-          <p>
-            Experience the power and agility of our lineup firsthand. Schedule a test ride with our expert staff to find the perfect machine for your riding style.
-          </p>
-        </div>
-        <form class="visit-form" id="visitForm">
-          <label class="sr-only" for="visitName">Your name</label>
-          <input id="visitName" name="name" type="text" placeholder="Full Name" autocomplete="name" required />
-          <label class="sr-only" for="visitEmail">Email address</label>
-          <input id="visitEmail" name="email" type="email" placeholder="Email Address" autocomplete="email" required />
-          <label class="sr-only" for="modelSelect">Preferred Model</label>
-          <select id="modelSelect" name="model" required>
-            <option value="" disabled selected>Select Preferred Model</option>
-            <option value="sport">Sport Bikes</option>
-            <option value="cruiser">Cruisers</option>
-            <option value="naked">Street / Naked</option>
-            <option value="adventure">Adventure</option>
-          </select>
-          <a href="#toast-trigger" id="reserveBtn" class="button button-primary" style="text-align:center;">Schedule Ride</a>
-        </form>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer css-scroll">
-    <div class="footer-brand">
-      <p class="brand-footer">
-        <span class="brand-icon">🏍️</span> APEX
-      </p>
-      <p class="footer-tagline">Pushing the limits of motorcycle engineering.</p>
+    <div class="hero-content">
+      <h2>Welcome to Bharat Motors</h2>
+      <p>Your trusted authorized dealership for all top Indian motorcycle brands. Best prices, easy EMI, and expert servicing guaranteed.</p>
+      <a href="#bikes" class="btn btn-primary">View Our Bikes</a>
     </div>
-    <p class="footer-year">© 2026 Apex Superbikes. Practical Submission Project.</p>
-    <div class="footer-links">
-      <a href="#" rel="noopener noreferrer">Instagram</a>
-      <a href="#" rel="noopener noreferrer">YouTube</a>
-      <a href="#top">Back to top</a>
+  </section>
+
+  <!-- Featured Bikes Section -->
+  <section class="bikes-section" id="bikes">
+    <div class="container">
+      <div class="section-title">
+        <h2>Popular Bikes Available</h2>
+        <p>Explore our best-selling commuter and cruiser motorcycles.</p>
+      </div>
+
+      <div class="bike-grid">
+        <!-- Bike Card 1 -->
+        <div class="bike-card">
+          <img src="images/royal_enfield_1778758697152.png" alt="Classic 350 Cruiser">
+          <div class="bike-info">
+            <h3>Classic Cruiser 350</h3>
+            <p class="price">Starting at ₹ 1,93,000*</p>
+            <ul class="specs">
+              <li><strong>Engine:</strong> 349 cc</li>
+              <li><strong>Mileage:</strong> 41 kmpl</li>
+              <li><strong>Weight:</strong> 195 kg</li>
+            </ul>
+            <button class="btn btn-primary full-width" onclick="alert('Booking Request Sent!')">Book Test Ride</button>
+          </div>
+        </div>
+
+        <!-- Bike Card 2 -->
+        <div class="bike-card">
+          <img src="images/pulsar_1778758713761.png" alt="Sporty Naked Commuter">
+          <div class="bike-info">
+            <h3>Sporty Naked 160</h3>
+            <p class="price">Starting at ₹ 1,20,000*</p>
+            <ul class="specs">
+              <li><strong>Engine:</strong> 160 cc</li>
+              <li><strong>Mileage:</strong> 45 kmpl</li>
+              <li><strong>Weight:</strong> 152 kg</li>
+            </ul>
+            <button class="btn btn-primary full-width" onclick="alert('Booking Request Sent!')">Book Test Ride</button>
+          </div>
+        </div>
+
+        <!-- Bike Card 3 -->
+        <div class="bike-card">
+          <img src="images/splendor_1778758729704.png" alt="Basic Daily Commuter">
+          <div class="bike-info">
+            <h3>Daily Commuter Plus</h3>
+            <p class="price">Starting at ₹ 75,000*</p>
+            <ul class="specs">
+              <li><strong>Engine:</strong> 97.2 cc</li>
+              <li><strong>Mileage:</strong> 65 kmpl</li>
+              <li><strong>Weight:</strong> 112 kg</li>
+            </ul>
+            <button class="btn btn-primary full-width" onclick="alert('Booking Request Sent!')">Book Test Ride</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services-section" id="services">
+    <div class="container">
+      <div class="section-title">
+        <h2>Why Choose Bharat Motors?</h2>
+      </div>
+      <div class="services-grid">
+        <div class="service-box">
+          <h3>Easy EMI Options</h3>
+          <p>Get your dream bike with low down payment and flexible monthly installments from our banking partners.</p>
+        </div>
+        <div class="service-box">
+          <h3>Expert Servicing</h3>
+          <p>Company-trained mechanics and state-of-the-art service center to keep your bike in top condition.</p>
+        </div>
+        <div class="service-box">
+          <h3>Genuine Spare Parts</h3>
+          <p>100% original OEM parts and accessories available over the counter.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact">
+    <div class="container footer-content">
+      <div class="footer-col">
+        <h3>Bharat Motors</h3>
+        <p>123, Main Market Road,<br>Near Clock Tower, New Delhi, 110001</p>
+      </div>
+      <div class="footer-col">
+        <h3>Contact Us</h3>
+        <p>Sales: +91 98765 43210</p>
+        <p>Service: +91 98765 43211</p>
+        <p>Email: info@bharatmotors.in</p>
+      </div>
+      <div class="footer-col">
+        <h3>Showroom Timings</h3>
+        <p>Monday - Saturday: 9:00 AM - 8:00 PM</p>
+        <p>Sunday: Closed</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Bharat Motors. All rights reserved. A practical major project submission.</p>
     </div>
   </footer>
 
-  <div class="css-toast" id="toast-trigger">
-    <input type="checkbox" id="toast-close" class="sr-only">
-    <div class="toast-message">Thank you — your test ride request has been received.</div>
-    <label for="toast-close" class="toast-close-btn">&times;</label>
-  </div>
 </body>
 </html>
